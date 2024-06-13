@@ -1,7 +1,0 @@
-from flask import Flask, request, jsonify
-
-app = Flask(__name__)
-
-@app.route('/sensor', methods=['POST'])
-def sensor_data():
-    data = request.get_json()
